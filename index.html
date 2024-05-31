@@ -1,0 +1,509 @@
+<html>
+	<head>
+	<!--meta link--->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--title tag-->
+		<title>Home Page</title>
+		<!--cdn for bootstrap css-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+		<!---cdn for font awesome-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--external css-->
+		<link href="CollegeStyle.css" rel="stylesheet"/>
+		
+		
+		<!--jquery link-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<!--preloader-->
+		<div id="preloader"></div>
+		<!--end preloader-->
+		
+		<!--div for top to up button-->
+		<button onclick="topFunction()" id="myScrollToTopBtn" title="Go to top"><img src='Images/up.png'/></button>
+		<!---end of top to up button--->
+		
+		<!---upper header-->
+		<div class='container-fluid'>
+			<div class='row' style='background-color:#1D1F58;height:35px;'>
+				<div class='col-sm-12' style='margin-top:7px;'>
+					<center>
+					<a target="_blank" href='tel:9415940255' class='UpperHeaderLink'>
+						<i class="fa-solid fa-phone"></i>
+					
+						<font class='uppernavbar'>Call Us&ensp;</font>&ensp;
+					</a>
+					<a target="_blank" href='mailto:info@pthariharsss.org' class='UpperHeaderLink'>
+					<i class="fa-solid fa-envelope"></i>
+					<font class='uppernavbar'>Mail Us&ensp;</font>&ensp;</a>
+					<a target="_blank" href='https://wa.me/9415940255' class='UpperHeaderLink'>
+						<i class="fa-brands fa-whatsapp"></i>
+					
+					<font class='uppernavbar'>Whatsapp</font>
+					</a>
+						</center>
+					</div>
+			</div>
+		</div>
+		<!---end of upper header-->
+		
+		<!--- header-->
+		<div class="container-fluid sticky-top">
+			<!--navbar-->
+			<div class="row">
+				<div class=""  style="padding:0 !important">
+					<nav class="navbar navbar-expand-lg navbar-light" style="background:white;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+						<img src="Images/logo.png" style="width:200px;height:60px;"/>
+						
+						<!-- Offcanvas toggle button (visible on all screen sizes) -->
+						<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+						aria-controls="offcanvasExample">
+							<div class="burger" id="burger">
+								<div class="line1"></div>
+								<div class="line2"></div>
+								<div class="line3"></div>
+							</div>
+						</button>
+						
+						<!-- Navbar items -->
+						<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+							<div class="offcanvas-header">
+								<h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+								<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+							</div>
+							<div class="offcanvas-body">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="About.html">About</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="Course.html">Courses</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="Facalty.html">Facalty</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="Gallery.html">Gallery</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="Contact.html">Contact</a>
+									</li>
+								</ul>		
+							</div>
+						</div>
+						<!-- Navbar items (visible on larger screens) -->
+						<div class='MenuGap'></div>
+						<div class="collapse navbar-collapse ms-auto" id="navbarNav">
+							<ul class="navbar-nav">
+								<li class="nav-item selectedmenu">
+									<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" href="About.html">About</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" href="Course.html">Courses</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" href="Facalty.html">Facalty</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" href="Gallery.html">Gallery</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" href="Contact.html">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!--end of navbar-->
+		
+		<!---div for carousel--->
+		<!-- Carousel wrapper -->
+		<div id="carouselDarkVariant" class="carousel slide carousel-fade carousel-dark" data-mdb-ride="carousel" data-mdb-carousel-init>
+			
+			<!-- Inner -->
+			<div class="carousel-inner">
+				<!-- Single item -->
+				<div class="carousel-item active">
+					<img src="Images/slider5.jpg" class="d-block w-100" alt="Motorbike Smoke"/>
+					<div class="carousel-caption d-none d-md-block">
+						
+					</div>
+				</div>
+				
+				<!-- Single item -->
+				<div class="carousel-item">
+					<img src="Images/slider6.jpg" class="d-block w-100" alt="Mountaintop"/>
+					<div class="carousel-caption d-none d-md-block">
+					</div>
+				</div>
+				
+				<!-- Single item -->
+				<div class="carousel-item">
+					<img src="Images/slider7.jpg" class="d-block w-100" alt="Woman Reading a Book"/>
+					<div class="carousel-caption d-none d-md-block">
+					</div>
+				</div>
+				
+				<!-- Single item -->
+				<div class="carousel-item">
+					<img src="Images/slider8.jpg" class="d-block w-100" alt="Woman Reading a Book"/>
+					<div class="carousel-caption d-none d-md-block">
+					</div>
+				</div>
+			</div>
+			<!-- Inner -->
+			
+			<!-- Controls -->
+			<button class="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant" data-mdb-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-mdb-target="#carouselDarkVariant" data-mdb-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<!-- Carousel wrapper -->
+		<!---end of div for carousel--->
+		
+		<!--div for work counter-->
+		<!--First div--->
+	
+			<div class="container-fluid CounterBackgroundImage mt-5">
+			<div class="row CounterOverlay">
+			<div class="col-sm-12">
+			<div class='row'>
+			<div class="col-md-2 col-sm-4 text-center col-6 mt-4">
+			<i class="fa-solid fa-user-graduate fa-2x mb-3"></i>
+			<h1 id="number1">200</h1>
+			<h6 style='font-weight:bold;'>Student</h6>
+			</div>
+			<div class="col-md-2 col-sm-4 text-center col-6 mt-4">
+			<i class="fa-solid fa-users fa-2x mb-3"></i>
+			<h1 id="number2">200</h1>
+			<h6 style='font-weight:bold;'>Facalty</h6>
+			</div>
+			<div class="col-md-2 col-sm-4 text-center col-6 mt-4">
+			<i class="fa-solid fa-school fa-2x mb-3"></i>
+			<h1 id="number3">200</h1>
+			<h6 style='font-weight:bold;'>Departments</h6>
+			</div>
+			<div class="col-md-2 col-sm-4 text-center col-6 mt-4">
+			<i class="fa-solid fa-list fa-2x mb-3"></i>
+			<h1 id="number4">200</h1>
+			<h6 style='font-weight:bold;'>Programs</h6>
+			</div>
+			<div class="col-md-2 col-sm-4 text-center col-6 mt-4">
+			<i class="fa-solid fa-address-book fa-2x mb-3"></i>
+			<h1 id="number5">200</h1>
+			<h6 style='font-weight:bold;'>Alumni</h6>
+			</div>
+			<div class="col-md-2 col-sm-4 text-center col-6 mt-4">
+			<i class="fa-solid fa-user-group fa-2x mb-3"></i>
+			<h1 id="number6">200</h1>
+			<h6 style='font-weight:bold;'>Hostellers</h6>
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
+		<!--end of div for work counter-->
+		
+		<!--div for about principal message--->
+		<div class='container'>
+			<div class="row mt-5">
+				<h2 class='mb-5' style="text-align:center;color:#1D1F58;font-weight:bold;">प्राचार्य का विचार</h2>
+				<div class='col-lg-5 col-md-12 col-12'>
+					<img src="Images/principal.png" style="width:100%;"/>
+				</div>
+				<div class='col-lg-1 col-md-12 col-12'></div>
+				<div class='col-lg-6 col-md-12 col-12'>
+					<h6 style="text-align:justify;">( प्राचार्य )<br>
+						विजयानंदपांडेय<br>
+						एम. ए. संस्कृतसाहित्याचार्य<br>
+						बी. एड.<br><br>
+						
+						अमृतवाणीसंस्कृतभाषा, नैवक्लिष्टानचकठिना |<br>
+						सुरससुबोधाविश्वमनोज्ञा, ललिताहृद्यारमणीया ||<br><br>
+						
+						संस्कृत भाषा तथा साहित्य इस भारतवर्ष के आत्मा का प्रतीक है | जिस प्रकार से ह्रदय मनुष्य के शरीर के अंदर रक्त सम्प्रेषण का कार्य करता है, ठीक उसी प्रकार से संस्कृत भी मनुष्य के अंदर सद्गुणों के विकास संवर्धन में सहायक होताहै | इसका एकमात्र कारण संस्कृत साहित्य की प्राचीनता,विपुल साहित्य भंडार सम्पन्नता,विश्ववाङमय में अद्धितीय स्थान का गौरवमय पद प्राप्त करना है | वर्तमान समय में संस्कृत के प्रति दुराग्रह की भावना को दूर करने के उद्देश्य प्रगति के पथ पर अग्रसर है| यह संस्कृत महाविद्यालय संस्कृत जगत में संस्कृत शिक्षा के मानदंडों का नितनूतन प्रतिमान कीर्तिमान प्रस्तुत करने में समर्थ रहें, इन्हीं शुभकामनाओं के साथ ....
+						<br>
+						पठामिसंस्कृतमनित्यम, वदामिसंस्कृतमसदा |<br>
+						ध्यायामिसंस्कृतमसम्यक, बन्देसंस्कृतमातरम ||<br><br>
+						
+						धन्यवाद!
+					</h6>
+				</div>
+			</div>
+		</div>
+		<!--end of div for about principal message--->
+		
+		<!--div for collage facilities--->
+		<div class='container-fluid'>
+			<div class="row mt-5 mb-5 p-5" style="background-color:#e6fcfc;">
+				<h2 style="text-align:center;color:#1D1F58;font-weight:bold;">कॉलेज का बुनियादी ढांचा</h2>
+				<div class='col-sm-12'>
+					<div class='row'>
+						
+						<div class="col-md-3 col-sm-6 mt-4">
+							<div class="card CollegeInfra">
+								<div class="card-body">
+									<div class='CollegeInfraImg'>
+										<img src="Images/book.png"/>
+									</div>
+									<h4 class="card-title">पुस्तकालय</h4>
+									<p class="card-text">हमारे महाविद्यालय में छात्रों के लिए पुस्तकालय की भी व्यवस्था है</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 mt-4">
+							<div class="card CollegeInfra">
+								<div class="card-body">
+									<div class='CollegeInfraImg'>
+										<img src="Images/hostel.png"/>
+									</div>
+									<h4 class="card-title">छात्रावास</h4>
+									<p class="card-text">इस महाविद्यालय में दूर से आए छात्रों के लिए छात्रावास की व्यवस्था  है.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 mt-4">
+							<div class="card CollegeInfra">
+								<div class="card-body">
+									<div class='CollegeInfraImg'>
+										<img src="Images/sports.png"/>
+									</div>
+									<h4 class="card-title">खेल</h4>
+									<p class="card-text">छात्रों को खेल से संबंधित चीजे भी संस्था द्वारा प्रदान की जाती है</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 mt-4">
+							<div class="card CollegeInfra" >
+								<div class="card-body">
+									<div class='CollegeInfraImg'>
+										<img src="Images/rss.png"/>
+									</div>
+									<h4 class="card-title">वाईफ़ाई</h4>
+									<p class="card-text">छात्रों को महाविद्यालय के भीतर मुक्त वाईफाई की सुविधा भी दी जाती है</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end of div for collage facilities--->
+		</div>
+		
+		<!--div for college quality-->
+		<div class='container'>
+			<div class="row mt-5">
+				<div class="col-lg-6 col-md-12 col-12">
+					<img src="Images/CollegeTour.jpg" style="width:100%;"/>
+				</div>
+				<div class="col-lg-6 col-md-12 col-12">
+					<h2 style="color:#1D1F58;margin-top:40px;font-weight:bold;">महाविद्यालय की विशेषता </h2>
+					<ul class="mt-4">
+						<li>	उत्तरोत्तर बेहतर परीक्षाफल</li>
+						<li>सर्वोत्तम अनुशासन</li>
+						<li>सहशिक्षण व्यवस्थाओं में छात्राओं की सुरक्षा पर विशेषध्यान</li>
+						<li>
+						यू०जी०सी० मानकों के अनुसार सभी विषयों में अधिकतम संभव शिक्षणकार्य</li>
+						<li>
+						पुस्तकालय को विकसित शिक्षण केंद्रों के समकक्ष लेन के लिए गंभीर प्रयास</li>
+						<li>
+						पुस्तकालय में कम्प्यूटरीकरण की प्रक्रिया प्रारम्भ</li>
+						<li>
+						सुसज्जित प्रयोगशालायें</li>
+						<li>
+						एन.एस.एस./ रोवर्सरेंजर्स प्रशिक्षण, क्रीड़ा की समुचित व्यवस्था</li>
+						<li>
+						छात्राओं के लिए एन.एस.एस की व्यवस्था</li>
+						<li>
+						साईकिल, स्कूटर एवं मोटरसाईकिल स्टैंड की व्यवस्था</li>
+						<li>
+						छात्राओं के लिए सुसज्जित का मनरूम</li>
+						<li>
+						सभी छात्राओं को शासनादेश के अनुसार छात्रवृत्ति की पारदर्शी व्यवस्था</li>
+						<li>
+						पूर्णतया कम्प्यूटरीकृत कार्यालय</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--end of div for college quality-->
+		
+		<!---div for faqs-->
+		<div class='container-fluid p-5 mt-5' style="background-color:#e6fcfc;">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<div class="row">
+						<h2 style="text-align:center;color:#1D1F58;font-weight:bold;">
+						प्रश्न जवाब</h2>
+						
+						<div class="col-md-12 col-12 col-lg-3 mt-4">
+							<img src="Images/faqs.gif" style="width:100%;"/>
+						</div>
+						<div class="col-md-12 mt-4 col-lg-9 col-12">
+							<div class="accordion" id="accordionExample">
+								
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingTwo">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											<strong>1.  यूजी/पीजी पाठ्यक्रमों के लिए श्री हरिहर संस्कृत पाठशाला में प्रवेश पाने के लिए पात्रता क्या है?
+											</strong>
+										</button>
+									</h2>
+									<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+										<div class="accordion-body">
+											श्री हरिहर संस्कृत पाठशाला के विभिन्न पाठ्यक्रमों में प्रवेश के लिए निम्नलिखित मानदंड हैं: पाठ्यक्रमपात्रताबीबीएउम्मीदवार को किसी मान्यता प्राप्त स्कूल/बोर्ड से 10+2 या समकक्ष परीक्षा उत्तीर्ण होना चाहिए।बीसीएउम्मीदवार को 10+2 उत्तीर्ण होना चाहिए
+										</div>
+									</div>
+								</div>
+								
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingThree">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											<strong>2.  श्री हरिहर संस्कृत पाठशाला छात्रों को कौन से पाठ्यक्रम प्रदान करता है?
+											</strong>
+										</button>
+									</h2>
+									<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+										<div class="accordion-body">
+											श्री हरिहर संस्कृत पाठशाला व्यवसाय और प्रबंधन अध्ययन, आईटी और सॉफ्टवेयर स्ट्रीम में बीबीए, बीसीए जैसे पाठ्यक्रम प्रदान करता है।
+											
+										</div>
+									</div>
+								</div>
+								
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingFour">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+											<strong>3.  श्री हरिहर संस्कृत पाठशाला में बुनियादी ढांचा कैसा है?
+												
+											</strong>
+										</button>
+									</h2>
+									<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+										<div class="accordion-body">
+											श्री हरिहर संस्कृत पाठशाला पूरे परिसर में ऑडिटोरियम, कैफेटेरिया, जिम, अस्पताल / चिकित्सा सुविधाएं, हॉस्टल, लैब्स, लाइब्रेरी, स्पोर्ट्स कॉम्प्लेक्स, वाई-फाई कैंपस जैसी अच्छी सुविधाएं प्रदान करता है।
+										</div>
+									</div>
+								</div>
+								
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingFive">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+											<strong>4.  श्री हरिहर संस्कृत पाठशाला में प्रस्तावित सभी पाठ्यक्रमों में प्रवेश कितना है?</strong>
+										</button>
+									</h2>
+									<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+										<div class="accordion-body">
+											श्री हरिहर संस्कृत पाठशाला में विभिन्न पाठ्यक्रमों में कुल सीटें 120 तक बढ़ जाती हैं। श्री हरिहर संस्कृत पाठशाला 2 यूजी पाठ्यक्रम सहित डिग्री पाठ्यक्रम प्रदान करता है। ये कार्यक्रम पूर्णकालिक मोड में पेश किए जाते हैं।
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+		</div>
+		<!---end of div for faqs-->
+		
+		<!---div for prayer--->
+		<div class='container'>
+			<div class='row mt-5'>
+				<h2 style="color:#1D1F58;font-weight:bold;text-align:center;" class='mb-5'>प्रार्थना</h2>
+				<div class='col-lg-6 col-md-12 col-12'>
+					<img src='Images/sanskrit.jpg' style="width:100%;"/>
+				</div>
+				<div class='col-lg-6 col-md-12 col-12'>
+					
+					<h4 style='margin-top:20px;color:#1D1F58;line-height:35px;word-spacing:5px;'>ॐ विश्वानि देव सवितार्दुरितानी परासुव|<br><br>
+						यद भद्रं तन्न आसुव ||<br>
+						हिरण्यगर्भः समवर्तताग्रे भूतस्य जातः परितेक आसीत् |<br>
+						स दाधार पृथ्वी धामुतेमां कस्मै देवाय हविषा विधेम||२||<br>
+						य आत्मदा बलदा यस्य विश्व उपासते प्रशिषं यस्य देवा|<br>
+					यस्य छायाअमृतं यस्य मृत्युः कस्मै देवाय हविषा विधेम ||३||<br></h4>
+				</div>
+			</div>
+		</div>
+		<!---end of div for prayer--->
+		
+		<!---div for footer-->
+		<div class='container-fluid mt-5' style="background-color:#1D1F58;">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class='row pt-5 px-5'>
+						<div class="col-lg-4 col-md-12 col-sm-12">
+							<img src='Images/logo1.png' style="width:200px;height:60px;" class='mb-4 mt-3'/><br>
+							<h6 style='color:white;text-align:justify;'>संस्कृत भाषा तथा साहित्य इस भारतवर्ष के आत्मा का प्रतीक है | जिस प्रकार से ह्रदय मनुष्य के शरीर के अंदर रक्त सम्प्रेषण का कार्य करता है, ठीक उसी प्रकार से संस्कृत भी मनुष्य के अंदर सद्गुणों के विकास संवर्धन में सहायक होता है |</h6>
+							
+						</div>
+						<div class="col-lg-1 col-md-12 col-sm-12"></div>
+						<div class="col-md-3 col-sm-12">
+							<h3 class='mt-3 mb-3' style='color:white;'>Navigation</h3>			
+							<div class="f-nav">
+		<a href="index.html"><i class="foterlink fa fa-caret-right"></i>Home</a>
+		<a href="About.html"><i class="foterlink fa fa-caret-right"></i>About</a>
+		<a href="Course.html"><i class="foterlink fa fa-caret-right"></i>Courses</a>
+		<a href="Facalty.html"><i class="foterlink fa fa-caret-right"></i>Facalty</a>
+		<a href="Gallery.html"><i class="foterlink fa fa-caret-right"></i>Gallery</a>
+		<a href="Contact.html"><i class="foterlink fa fa-caret-right"></i>Contact</a>
+	</div>
+
+						</div>
+						<div class="col-lg-4 col-md-12 col-sm-12">
+						<h3 class='mb-3 mt-3' style='color:white;'>Social Connection</h3>
+							<a href="#" class="socialicon fa fa-facebook"></a>
+							<a href="#" class="socialicon fa fa-twitter"></a>
+							<a href="#" class="socialicon fa fa-google"></a>
+							<a href="#" class="socialicon fa fa-linkedin"></a>
+							<a href="#" class="socialicon fa fa-instagram"></a>
+							<h3 class='mb-3 mt-4' style='color:white;'>Keep Connect</h3>
+							<a target="_blank" href='tel:9415940255' class="socialicon fa fa-phone"></a>
+							<a  target="_blank" href='mailto:info@pthariharsss.org' class="socialicon fa fa-envelope"></a>
+							<a target="_blank" href='https://wa.me/9415940255' class="socialicon fa fa-whatsapp"></a>	
+							</div>
+					</div>
+				</div>
+			</div>
+			<hr style='border:1px solid white;'>
+			<p style='color:white;text-align:center;padding-bottom:20px;'>Copyright © 2024 All rights reserved | Developed by : <a style='color:white;text-decoration:none;' href='https://www.techomind.com/'  target="_blank">TECHOMIND</a></p>
+		</div>
+		<!---end of div for footer-->
+		
+		<!--Js File-->
+		<script src="CollegeScript.js"></script>
+		
+		<!-- MDB carousel-->
+		<script type="text/javascript" src="js/mdb.umd.min.js">
+		</script>
+		
+		<!--bootstrap js cdn--->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+		
+        <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+	</body>
+</html>	
